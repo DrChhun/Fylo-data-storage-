@@ -7,13 +7,19 @@
     height: 100vh;
 }
 
+.card,
+.card__storage,
+.card__name__icon,
+.card__storage__gb {
+    display: flex;
+}
+
 .card__name,
 .card__storage {
     background-color: hsl(228, 56%, 26%);
 }
 
 .card {
-    display: flex;
     justify-content: center;
     position: relative;
     top: 50%;
@@ -27,7 +33,6 @@
 }
 
 .card__name__icon {
-    display: flex;
     height: 80px;
 }
 
@@ -49,8 +54,8 @@
     padding: 3rem;
 }
 
-.card__storage__gb {
-    display: flex;
+.card__storage__gb,
+.card__storage {
     justify-content: space-between;
 }
 
@@ -67,11 +72,25 @@
 }
 
 .card__storage {
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .card__storage p {
     color: white;
+}
+
+@media (max-width: 700px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .card__name,
+    .card__storage {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .card__storage {
+        margin-top: 2rem;
+    }
 }
