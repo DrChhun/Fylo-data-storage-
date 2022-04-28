@@ -10,7 +10,8 @@
 .card,
 .card__storage,
 .card__name__icon,
-.card__storage__gb {
+.card__storage__gb,
+.storage__left {
     display: flex;
 }
 
@@ -79,6 +80,29 @@
     color: white;
 }
 
+.storage__left {
+    padding: 2rem;
+    background-color: white;
+    width: 15%;
+    border-radius: 10px;
+    position: relative;
+    left: 62.5rem;
+    bottom: 2.5rem;
+}
+
+.storage__left h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.storage__left p {
+    color: gray;
+}
+
+.main {
+    overflow: hidden;
+}
+
 @media (max-width: 700px) {
     .card {
         flex-direction: column;
@@ -92,5 +116,20 @@
 
     .card__storage {
         margin-top: 2rem;
+    }
+
+    .storage__left {
+        width: 40%;
+        top: 10.5rem;
+        left: 7rem;
+        padding: 1rem;
+        align-items: center;
+    }    
+}
+
+@media (min-width:700px) and (max-width: 1000px) {
+    .card__name,
+    .card__storage {
+        width: 40%;
     }
 }
