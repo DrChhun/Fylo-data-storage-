@@ -1,6 +1,77 @@
 .main {
+    background-color: hsl(229, 57%, 11%);
     background-image: url(images/bg-desktop.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position-y: 20rem;
     height: 100vh;
+}
+
+.card__name,
+.card__storage {
+    background-color: hsl(228, 56%, 26%);
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.card__name {
+    width: 25%;
+    border-radius: 10px 50px 10px 10px;
+    padding: 3rem;
+}
+
+.card__name__icon {
+    display: flex;
+    height: 80px;
+}
+
+.card__name__icon img {
+    background-color: hsl(229, 57%, 11%);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 2.5rem;
+}
+
+.img-margin {
+    margin-left: 25px;
+}
+
+.card__storage {
+    width: 40%;
+    margin-left: 2.5rem;
+    border-radius: 10px;
+    padding: 3rem;
+}
+
+.card__storage__gb {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__storage__percentage {
+    width: 80%;
+    background-image: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    height: 15px;
+    border-radius: 100px;
+}
+
+.percentage {
+    width: 100%;
+    background-color: aqua;
+}
+
+.card__storage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card__storage p {
+    color: white;
 }
