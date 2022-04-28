@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
   
   <title>Frontend Mentor | Fylo data storage component</title>
 
@@ -15,6 +16,29 @@
   </style>
 </head>
 <body>
+
+  <div class="main">
+    <div class="card">
+      <div class="card__name">
+        <img src="images/logo.svg" alt="">
+        <div class="card__name__icon">
+          <img src="images/icon-document.svg" alt="">
+          <img src="images/icon-folder.svg" alt="">
+          <img src="images/icon-upload.svg" alt="">
+        </div>
+      </div>
+      <div class="card__storage">
+        <p>You’ve used 815 GB of your storage</p>
+        <div class="card__storage__percentage">
+          <span class="percentage"></span>
+        </div>
+        <div>
+          <p>0 GB</p>
+          <p>1000 GB</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   You’ve used 815 GB of your storage
 
